@@ -190,7 +190,28 @@ export default function Hero() {
               </div>
             </motion.div>
 
-          
+            {/* Stats mini row */}
+            <motion.div
+              initial={{ opacity: 0 }}
+              animate={{ opacity: 1 }}
+              transition={{ delay: 1.4, duration: 0.8 }}
+              className="mt-12 grid w-full max-w-3xl grid-cols-2 gap-3 sm:grid-cols-4"
+            >
+              {[
+                { v: "1+", l: "Years" },
+                { v: "9+", l: "Projects" },
+                { v: "5+", l: "Certs" },
+              ].map((s, i) => (
+                <div key={i} className="glass rounded-lg px-3 py-3 text-center">
+                  <div className="font-display text-2xl font-bold text-cyan-300 glow-text">{s.v}</div>
+                  <div className="mt-1 font-mono text-[10px] tracking-widest text-cyan-200/60">{s.l.toUpperCase()}</div>
+                </div>
+              ))}
+            </motion.div>
+          </motion.div>
+        )}
+      </div>
+
       {/* Scroll cue */}
       
       <motion.button
