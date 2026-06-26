@@ -174,7 +174,7 @@ export default function Hero() {
 </div>
            
           </motion.div>
-        )}
+      
       </div>
 
       {/* Scroll cue */}
