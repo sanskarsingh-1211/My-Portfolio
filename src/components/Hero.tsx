@@ -190,7 +190,7 @@ export default function Hero() {
               </div>
             </motion.div>
 
-            {/* Stats mini row 
+            {/* Stats mini row */}
             <motion.div
               initial={{ opacity: 0 }}
               animate={{ opacity: 1 }}
@@ -198,10 +198,9 @@ export default function Hero() {
               className="mt-12 grid w-full max-w-3xl grid-cols-2 gap-3 sm:grid-cols-4"
             >
               {[
-                { v: "6+", l: "Years" },
-                { v: "40+", l: "Projects" },
-                { v: "10+", l: "Certs" },
-                { v: "5+", l: "Clouds" },
+                { v: "1+", l: "Years" },
+                { v: "9+", l: "Projects" },
+                { v: "5+", l: "Certs" },
               ].map((s, i) => (
                 <div key={i} className="glass rounded-lg px-3 py-3 text-center">
                   <div className="font-display text-2xl font-bold text-cyan-300 glow-text">{s.v}</div>
@@ -211,7 +210,7 @@ export default function Hero() {
             </motion.div>
           </motion.div>
         )}
-      </div>*/
+      </div>
 
       {/* Scroll cue */}
       
