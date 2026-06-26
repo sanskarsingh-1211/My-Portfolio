@@ -140,56 +140,38 @@ export default function Hero() {
               transition={{ delay: 1.2, duration: 0.7 }}
               className="glass-strong neon-border mt-6 grid w-full max-w-3xl grid-cols-1 gap-4 rounded-2xl p-4 sm:grid-cols-[140px_1fr]"
             >
-              <div className="relative h-32 overflow-hidden rounded-lg sm:h-full sm:min-h-[140px]">
-                {/* Stylized portrait silhouette using a programmatic SVG */}
-                <div className="absolute inset-0 bg-gradient-to-br from-cyan-500/30 via-blue-700/20 to-purple-700/30" />
-                <svg viewBox="0 0 200 200" className="absolute inset-0 h-full w-full">
-                  <defs>
-                    <linearGradient id="hero-grad" x1="0" y1="0" x2="1" y2="1">
-                      <stop offset="0%" stopColor="#00F0FF" stopOpacity="0.9" />
-                      <stop offset="100%" stopColor="#742774" stopOpacity="0.7" />
-                    </linearGradient>
-                    <radialGradient id="hero-portrait" cx="50%" cy="40%">
-                      <stop offset="0%" stopColor="#6EEBFF" stopOpacity="0.95" />
-                      <stop offset="100%" stopColor="#002050" stopOpacity="0.4" />
-                    </radialGradient>            
-                  </defs>
-                  {/* Particle field face silhouette */}
-                  {Array.from({ length: 80 }).map((_, k) => {
-                    const r = 0.6 + Math.random() * 0.6;
-                    const a = Math.random() * Math.PI * 2;
-                    const x = 100 + r * 50 * Math.cos(a) * (k < 50 ? 1 : 1.4);
-                    const y = k < 50 ? 80 + r * 35 * Math.sin(a) * 1.1 : 130 + r * 25 * Math.sin(a) * 1.6;
-                    return <circle key={k} cx={x} cy={y} r="0.8" fill="url(#hero-grad)" opacity={0.5 + Math.random() * 0.5} />;
-                  })}
-                  {/* Face outline */}
-                  <ellipse cx="100" cy="80" rx="30" ry="38" fill="url(#hero-portrait)" opacity="0.6" />
-                  {/* Shoulders */}
-                  <path d="M 50 200 Q 100 130 150 200 Z" fill="url(#hero-grad)" opacity="0.5" />
-                  {/* Scan line overlay */}
-                  <line x1="0" y1="100" x2="200" y2="100" stroke="#00F0FF" strokeWidth="0.4" opacity="0.6">
-                    <animate attributeName="y1" values="0;200;0" dur="6s" repeatCount="indefinite" />
-                    <animate attributeName="y2" values="0;200;0" dur="6s" repeatCount="indefinite" />
-                  </line>
-                </svg>
-                <div className="absolute inset-0 bg-gradient-to-t from-black/40 to-transparent" />
-                <div className="absolute bottom-2 left-2 font-mono text-[9px] tracking-widest text-cyan-200/80">IMG_6036.OPTIC</div>
-                <div className="absolute right-2 top-2 h-2 w-2 rounded-full bg-cyan-400 blink" />
-              </div>
-              <div className="flex flex-col justify-center gap-1 text-left">
-                <div className="font-mono text-[10px] tracking-widest text-cyan-300/70">// IDENTITY CONFIRMED</div>
-                <div className="font-display text-xl font-bold text-white">Sanskar Singh</div>
-                <div className="font-mono text-xs text-cyan-200/80">Cloud · Dynamics 365 · AI · Enterprise</div>
-                <div className="mt-2 flex flex-wrap gap-1.5">
-                  {["MS CERTIFIED", "AWS ML", "D365 CE", "AZURE EXPERT", "AI · DATA"].map((t) => (
-                    <span key={t} className="rounded-full border border-cyan-400/30 bg-cyan-400/5 px-2 py-0.5 font-mono text-[9px] tracking-widest text-cyan-200/80">
-                      {t}
-                    </span>
-                  ))}
-                </div>
-              </div>
-            </motion.div>
+            <div className="relative h-32 overflow-hidden rounded-lg sm:h-full sm:min-h-[140px]">
+  <img
+    src="/Sanskar.png"
+    alt="Sanskar Singh"
+    className="h-full w-full rounded-lg object-cover"
+  />
+</div>
+            
+                 <div className="flex flex-col justify-center gap-1 text-left">
+  <div className="font-mono text-[10px] tracking-widest text-cyan-300/70">
+    // IDENTITY CONFIRMED
+  </div>
 
+  <div className="font-display text-xl font-bold text-white">
+    Sanskar Singh
+  </div>
+
+  <div className="font-mono text-xs text-cyan-200/80">
+    Cloud • Dynamics 365 • AI • Enterprise
+  </div>
+
+  <div className="mt-2 flex flex-wrap gap-1.5">
+    {["MS CERTIFIED", "AWS ML", "D365 CE", "AZURE EXPERT", "AI • DATA"].map((t) => (
+      <span
+        key={t}
+        className="rounded-full border border-cyan-400/30 bg-cyan-400/5 px-2 py-0.5 font-mono text-[9px] tracking-widest text-cyan-200/80"
+      >
+        {t}
+      </span>
+    ))}
+  </div>
+</div>
            
           </motion.div>
         )}
