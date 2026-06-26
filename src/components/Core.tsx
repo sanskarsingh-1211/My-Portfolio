@@ -28,7 +28,7 @@ function CountUp({ to, suffix = "", duration = 1.6 }: { to: number; suffix?: str
 
 export default function Core() {
   return (
-    <section id="core" className="relative w-full overflow-hidden py-24 md:py-32">
+    <section id="core" className="relative w-full overflow-hidden pt-32 pb-24 md:py-32">
       {/* Holographic background */}
       <div className="pointer-events-none absolute inset-0 grid-bg opacity-30" />
       <div className="pointer-events-none absolute -left-40 top-1/4 h-96 w-96 rounded-full bg-cyan-500/10 blur-3xl" />
