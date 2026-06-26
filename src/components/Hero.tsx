@@ -214,6 +214,7 @@ export default function Hero() {
       </div>
 
       {/* Scroll cue */}
+      /*
       <motion.button
         onClick={enter}
         initial={{ opacity: 0 }}
@@ -223,7 +224,7 @@ export default function Hero() {
       >
         <span>SCROLL TO BEGIN</span>
         <ChevronDown className="h-4 w-4 animate-bounce" />
-      </motion.button>
+      </motion.button>*/ 
 
       {/* Side tech labels */}
       <div className="absolute left-6 top-1/2 z-20 hidden -translate-y-1/2 flex-col gap-2 font-mono text-[10px] tracking-widest text-cyan-300/40 lg:flex">
