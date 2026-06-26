@@ -171,12 +171,13 @@ export default function Hero() {
       </span>
     ))}
   </div>
-</div>
-           
-          </motion.div>
-      
-      </div>
+        </div>          {/* closes text section */}
 
+      </motion.div>     {/* closes Identity Card */}
+
+    </motion.div>       {/* closes the booted motion.div */}
+
+  </div>                {/* closes Main Content */}
       {/* Scroll cue */}
       
       <motion.button
