@@ -138,7 +138,7 @@ export default function Hero() {
               initial={{ opacity: 0, y: 20 }}
               animate={{ opacity: 1, y: 0 }}
               transition={{ delay: 1.2, duration: 0.7 }}
-              className="glass-strong neon-border mt-10 grid w-full max-w-3xl grid-cols-1 gap-4 rounded-2xl p-4 sm:grid-cols-[140px_1fr]"
+              className="glass-strong neon-border mt-6 grid w-full max-w-3xl grid-cols-1 gap-4 rounded-2xl p-4 sm:grid-cols-[140px_1fr]"
             >
               <div className="relative h-32 overflow-hidden rounded-lg sm:h-full sm:min-h-[140px]">
                 {/* Stylized portrait silhouette using a programmatic SVG */}
@@ -152,7 +152,7 @@ export default function Hero() {
                     <radialGradient id="hero-portrait" cx="50%" cy="40%">
                       <stop offset="0%" stopColor="#6EEBFF" stopOpacity="0.95" />
                       <stop offset="100%" stopColor="#002050" stopOpacity="0.4" />
-                    </radialGradient>
+                    </radialGradient>            
                   </defs>
                   {/* Particle field face silhouette */}
                   {Array.from({ length: 80 }).map((_, k) => {
@@ -219,7 +219,7 @@ export default function Hero() {
         initial={{ opacity: 0 }}
         animate={{ opacity: booted ? 1 : 0 }}
         transition={{ delay: 1.8 }}
-        className="absolute bottom-6 left-1/2 z-30 -translate-x-1/2 flex flex-col items-center gap-1 font-mono text-[10px] tracking-widest text-cyan-300/60"
+        className="absolute bottom-12 left-1/2 z-30 -translate-x-1/2 flex flex-col items-center gap-1 font-mono text-[10px] tracking-widest text-cyan-300/60"
       >
         <span>SCROLL TO BEGIN</span>
         <ChevronDown className="h-4 w-4 animate-bounce" />
