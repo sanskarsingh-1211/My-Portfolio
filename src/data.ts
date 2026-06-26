@@ -20,10 +20,10 @@ export const PROFILE = {
 };
 
 export const STATS = [
-  { value: "6+", label: "Years Experience", sub: "Cloud · Enterprise · AI" },
-  { value: "40+", label: "Enterprise Projects", sub: "Delivered Globally" },
+  { value: "1+", label: "Years Experience", sub: "Cloud · Enterprise · AI" },
+  { value: "9+", label: "Enterprise Projects", sub: "Delivered Globally" },
   { value: "10+", label: "Certifications", sub: "Microsoft · AWS · Atlassian" },
-  { value: "5+", label: "Cloud Platforms", sub: "Azure · AWS · M365 · Zoho" },
+  { value: "3+", label: "Cloud Platforms", sub: "Azure · AWS · M365 · Zoho" },
   { value: "15+", label: "Global Clients", sub: "Enterprise & SMB" },
   { value: "4", label: "Industries", sub: "Tech · Audio · Maps · Edu" },
 ];
